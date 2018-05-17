@@ -2,7 +2,8 @@
 	var gm = new GraphicManager();
 	var dm = new DataManager(gm);
 	var firstLPP = new LPP();
-
+	var numbVar = 2;
+	var numbRes = 4;
 	//optimal solution single.
 	firstLPP.setFunction("min",[-1,-1]);
 	firstLPP.createConstraint([3,2],'>',6);
@@ -50,6 +51,10 @@
 
 	$("#add_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
+		numbVar++;
+		console.log(numbVar);
+		$('#numbVar').empty();
+		$('#numbVar').append(numbVar);
 		gm.addColumn();
 		dm.partialPutLPP(lpp);
 
@@ -57,6 +62,10 @@
 	});
 	$("#remove_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
+		numbVar--;
+		console.log(numbVar);
+		$('#numbVar').empty();
+		$('#numbVar').append(numbVar);
 		gm.removeColumn();
 		dm.partialPutLPP(lpp);
 
@@ -64,6 +73,10 @@
 	});
 	$("#add_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
+		numbRes++;
+		console.log(numbRes);
+		$('#numbRes').empty();
+		$('#numbRes').append(numbRes);
 		gm.addLine();
 		dm.partialPutLPP(lpp);
 	
@@ -71,6 +84,10 @@
 	});
 	$("#remove_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
+		numbRes--;
+		console.log(numbRes);
+		$('#numbRes').empty();
+		$('#numbRes').append(numbRes);
 		gm.removeLine();
 		dm.partialPutLPP(lpp);
 
