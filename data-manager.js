@@ -112,9 +112,9 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 		var vIn = simplex.variableToInBase();
 		var vOut = simplex.variableToOutBase(vIn);
 
-		var element = '<div class="panel panel-info">';
+		var element = '<div class="panel panel-default">';
 		element += '<div id="'+name+'_block'+number+'" class="panel-heading" data-target="#'+name+number+'">';
-		element += '<h4 class="panel-title"><translate trans="'+name+'">'+name+'</translate> '+number+'</h4>';
+		element += '<h4 align="center" class="panel-title"><translate trans="'+name+'">'+name+'</translate> '+number+'</h4>';
 		element += '</div>';
 		element += '<div id="'+name+number+'" class="panel-body toggler-target">';
 		element += '<table class="table">';
