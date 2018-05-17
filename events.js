@@ -78,6 +78,11 @@
 	});
 	$("#calculate_simplex_btn").on('click',function(e){
 		clearAll();
+		
+		/* ### animação de rolagem ###*/
+		$('html, body').animate({
+			scrollTop: $("#solution_head").offset().top
+		}, 2000);
 
 		if(gm.getNumberOfLines() == 0 || gm.getNumberOfColumns() == 0){
 			gm.putAlertMessage("solve_msg","size_error","danger");
@@ -103,6 +108,8 @@
 		}
 		
 		setTranslations();
+
+
 	});
 
 	$("#clear_solutions_btn").on('click',function(){
