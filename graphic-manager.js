@@ -11,12 +11,12 @@ function GraphicManager(){
 	var that = this;
 
 	var addVariableInFunctionHead = function(number){
-		var element = '<th>c'+number+'</th>';
+		var element = '<th>x'+number+'</th>';
 		$function_head.append(element);
 	};
 
 	var addFunctionVariables = function(number){
-		var element = '<td><input id="c'+number+'" value="1" type="number" class="form-control min_width_in"/></td>';
+		var element = '<td><input id="x'+number+'" value="1" type="number" class="form-control min_width_in"/></td>';
 		$function_variables.append(element);
 	};
 
