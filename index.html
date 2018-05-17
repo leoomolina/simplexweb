@@ -3,6 +3,7 @@
 	<head>
 		<title>Simplex</title>
 		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="libs/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="style.css">
@@ -90,8 +91,13 @@
 									<tr>
 										<td>
 											<select id="kind_of_function" class="form-control">
-												<option value="min">min</option>
-												<option value="max">max</option>
+												<option selected value="max">max</option>
+
+												<!-- ########################################## -->
+												<!-- %%% ativar quando for entregar o min %%%-->
+												<!-- ########################################## -->
+												
+												<!-- <option value="min">min</option> -->
 											</select>
 										</td>
 									</tr>
@@ -129,12 +135,16 @@
 					<div class="row">
 							<div class="col-md-12">
 									<div class="row">
-										<div class="col-md-6"><p><button id="calculate_simplex_btn" class="btn btn-info btn-block">
+										<div class="col-md-12"><p><button id="calculate_simplex_btn" class="btn btn-info btn-block">
 											<translate trans="solve_lpp">Solve LPP</translate>
 										</button></p></div>
-										<div class="col-md-6"><p><button id="clear_solutions_btn" class="btn btn-info btn-block">
+
+
+										<!-- ### limpar resultados ### -->
+										<!-- <div class="col-md-6"><p><button id="clear_solutions_btn" class="btn btn-info btn-block">
 											<translate trans="clear_solutions">Clear Solutions</translate>
-										</button></p></div>
+										</button></p></div> -->
+
 									</div>
 									<div id="solve_msg" class="row"></div>
 								</div>

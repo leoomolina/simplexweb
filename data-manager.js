@@ -9,9 +9,10 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 	var b_id = "#b";
 
 	var that = this;
-
+	
 	this.getKindOfFunction = function(){
 		var kindOf = $kind_of_function.val();
+		console.log(kindOf);
 		return kindOf;
 	};
 
