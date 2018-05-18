@@ -2,6 +2,11 @@
 <html>
 	<head>
 		<title>Simplex</title>
+
+		<!-- Ícone SimplexWeb-->
+		<link rel="icon" href="icon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
 		<meta charset="utf-8" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="libs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
@@ -40,47 +45,17 @@
 							<h3><translate trans="tools">Tools</translate></h3>
 						</div>
 					</div> -->
-					<div class="col-md-6">
-						<fieldset>
-							<legend align="center"><translate trans="variables">Variables: </translate><span id="numbVar"></span></legend>
-							
-							<div class="col-md-6">
-								<p>
-									<button  id="add_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span></button>
-								</p>
-							</div>
-							<div class="col-md-6">
-								<p>
-									<button id="remove_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></span></button>
-								</p>
-							</div>
-						</fieldset>
-					</div>
-					<div class="col-md-6">
-						<fieldset>
-							<legend align="center"><translate trans="constraints">Constraints</translate><span id="numbRes"></span></legend>
-							<div class="col-md-6">
-								<p>
-									<button id="add_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></button>
-								</p>
-							</div>
-							<div class="col-md-6">
-								<p>
-									<button id="remove_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></button>
-								</p>
-							</div>
-						</fieldset>
-					</div>
-
+					
+					
 				</div>
 				<div class="row">
 					<div class="row">
 						<div class="page-header">
-							<h3><translate trans="lpp">Linear Programming Problem</translate></h3>
+							<h3 align="center"><translate trans="lpp">Linear Programming Problem</translate></h3>
 						</div>
 					</div>
 					<div class="row panel panel-default">
-						<div class="panel-heading toggler" data-target="#function">
+						<div class="panel-heading toggler cursor-pointer" data-target="#function">
 							<h4 align="center" class="panel-title"><translate trans="function">Function</translate></h4>
 						</div>
 						<div id="function" class="panel-body toggler-target">
@@ -92,7 +67,7 @@
 									<tr>
 										<td>
 											<select id="kind_of_function" class="form-control">
-												<option  value="max" selected>max</option>
+												<option  value="max" selected>Max</option>
 
 												<!-- ########################################## -->
 												<!-- %%% ativar quando for entregar o min %%%-->
@@ -112,13 +87,46 @@
 									</tr>
 								</table>
 							</div>
+
+							<div class="col-md-offset-4">
+								<fieldset>
+									<legend align="center"><translate trans="variables">Variables: </translate><span id="numbVar"></span></legend>
+									<div class="col-md-2">
+										<p>
+											<button  id="add_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span></button>
+										</p>
+									</div>
+									<div class="col-md-2">
+										<p>
+											<button id="remove_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></span></button>
+										</p>
+									</div>
+								</fieldset>
+							</div>
+
 						</div>
+
 					</div>
 					<div class="row panel panel-default">
-						<div class="panel-heading toggler" data-target="#constraints_body">
-							<h2 align="center" class="panel-title"><translate trans="constraints">Constraints</translate></h2>
+						<div class="panel-heading toggler cursor-pointer" data-target="#constraints_body">
+							<div align="center" class="panel-title">Restrições: <span id="numbRes"></span></div>
 						</div>
 						<div id="constraints_body" class="panel-body toggler-target">
+							<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<fieldset align="center">
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<p>
+											<button id="add_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></button>
+										</p>
+									</div>
+									<div class="col-xs-6 col-md-4" >
+										<p>
+											<button id="remove_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></button>
+										</p>
+									</div>
+								</fieldset>
+							</div>
+
 							<div class="col-md-12">
 								<table class="table">
 									<thead id="constraints_head">
@@ -168,12 +176,12 @@
 						<div id="type_solution_msg" class="row"></div>
 						<div id="solutions" class="row">
 						</div>
-						<div class="row">
+						<!--<div class="row">
 							<div class="col-md-2">
 								<p><button id="next_solution" class="btn btn-info"><translate trans="next_solution">Next Solution</translate></button></p>
 							</div>
 							<div id="next_solution_msg" class="col-md-10"></div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<div class="row">

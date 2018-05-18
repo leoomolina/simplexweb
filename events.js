@@ -62,14 +62,16 @@
 	});
 	$("#remove_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
-		numbVar--;
-		console.log(numbVar);
-		$('#numbVar').empty();
-		$('#numbVar').append(numbVar);
-		gm.removeColumn();
-		dm.partialPutLPP(lpp);
-
-		setTranslations();
+		if(numbVar != 0){
+			numbVar--;
+			console.log(numbVar);
+			$('#numbVar').empty();
+			$('#numbVar').append(numbVar);
+			gm.removeColumn();
+			dm.partialPutLPP(lpp);
+	
+			setTranslations();
+		}
 	});
 	$("#add_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
@@ -84,14 +86,17 @@
 	});
 	$("#remove_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
-		numbRes--;
-		console.log(numbRes);
-		$('#numbRes').empty();
-		$('#numbRes').append(numbRes);
-		gm.removeLine();
-		dm.partialPutLPP(lpp);
-
-		setTranslations();
+		if(numbRes != 0)
+		{
+			numbRes--;
+			console.log(numbRes);
+			$('#numbRes').empty();
+			$('#numbRes').append(numbRes);
+			gm.removeLine();
+			dm.partialPutLPP(lpp);
+	
+			setTranslations();
+		}
 	});
 	$("#calculate_simplex_btn").on('click',function(e){
 		clearAll();

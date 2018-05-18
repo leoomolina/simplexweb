@@ -57,3 +57,7 @@ body{
 .table{
     background: #DEDEDE;
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}
