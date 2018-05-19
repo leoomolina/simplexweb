@@ -36,6 +36,7 @@
 			<div class="row">
 				<div class="page-header">
 					<h1 align="center"><translate trans="title">SimplexWeb</translate></h1>
+					<h3 align="center"><translate trans="lpp">Linear Programming Problem</translate></h3>
 				</div>
 			</div>
 			<div class="row">
@@ -49,14 +50,14 @@
 					
 				</div>
 				<div class="row">
-					<div class="row">
-						<div class="page-header">
-							<h3 align="center"><translate trans="lpp">Linear Programming Problem</translate></h3>
-						</div>
-					</div>
+					
 					<div class="row panel panel-default">
 						<div class="panel-heading toggler cursor-pointer" data-target="#function">
-							<h4 align="center" class="panel-title"><translate trans="function">Function</translate></h4>
+							<h4 align="center" class="panel-title">
+								<translate trans="function">Function</translate>
+								<i class="glyphicon glyphicon-chevron-down"></i>
+							</h4>
+							<legend align="center"><translate trans="numberVariables">Number of Variables: </translate><span class="numbVar"></span></legend>
 						</div>
 						<div id="function" class="panel-body toggler-target">
 							<div class="col-md-2">
@@ -88,17 +89,17 @@
 								</table>
 							</div>
 
-							<div class="col-md-offset-4">
+							<div class="row justify-content-md-center">
 								<fieldset>
-									<legend align="center"><translate trans="variables">Variables: </translate><span id="numbVar"></span></legend>
-									<div class="col-md-2">
+									<legend align="center"><translate trans="variables">Variables: </translate><span class="numbVar"></span></legend>
+									<div class="col col-md-1">
 										<p>
-											<button  id="add_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span></button>
+											<button  id="add_column_btn" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span></button>
 										</p>
 									</div>
-									<div class="col-md-2">
+									<div class="col col-md-1">
 										<p>
-											<button id="remove_column_btn" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></span></button>
+											<button id="remove_column_btn" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-minus"></span></button>
 										</p>
 									</div>
 								</fieldset>
@@ -109,19 +110,22 @@
 					</div>
 					<div class="row panel panel-default">
 						<div class="panel-heading toggler cursor-pointer" data-target="#constraints_body">
-							<div align="center" class="panel-title">Restrições: <span id="numbRes"></span></div>
+							<div align="center" class="panel-title">
+								Restrições: <span id="numbRes"></span>
+								<i class="glyphicon glyphicon-chevron-down"></i>
+							</div>
 						</div>
 						<div id="constraints_body" class="panel-body toggler-target">
-							<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<fieldset align="center">
-									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<div class="row justify-content-md-center  center-button-max-rem">
+								<fieldset>
+									<div class="col col-md-1">
 										<p>
-											<button id="add_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></button>
+											<button id="add_line_btn" class="btn btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></button>
 										</p>
 									</div>
-									<div class="col-xs-6 col-md-4" >
+									<div class="col col-md-1">
 										<p>
-											<button id="remove_line_btn" class="btn btn btn-primary btn-block"><span class="glyphicon glyphicon-minus"></button>
+											<button id="remove_line_btn" class="btn btn btn-danger btn-block"><span class="glyphicon glyphicon-minus"></button>
 										</p>
 									</div>
 								</fieldset>
@@ -159,7 +163,7 @@
 										</button></p></div> -->
 
 									</div>
-									<div id="solve_msg" class="row"></div>
+									<!-- <div id="solve_msg" class="row"></div> -->
 								</div>
 					</div>
 

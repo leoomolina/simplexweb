@@ -2,8 +2,13 @@
 	var gm = new GraphicManager();
 	var dm = new DataManager(gm);
 	var firstLPP = new LPP();
+
+	mostrarConteudo = true;
+
 	var numbVar = 2;
+	$('.numbVar').append(numbVar);
 	var numbRes = 4;
+	$('#numbRes').append(numbRes);
 	//optimal solution single.
 	firstLPP.setFunction("min",[-1,-1]);
 	firstLPP.createConstraint([3,2],'>',6);
@@ -52,9 +57,9 @@
 	$("#add_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
 		numbVar++;
-		console.log(numbVar);
-		$('#numbVar').empty();
-		$('#numbVar').append(numbVar);
+		//console.log(numbVar);
+		$('.numbVar').empty();
+		$('.numbVar').append(numbVar);
 		gm.addColumn();
 		dm.partialPutLPP(lpp);
 
@@ -64,9 +69,9 @@
 		var lpp = dm.getLPP();
 		if(numbVar != 0){
 			numbVar--;
-			console.log(numbVar);
-			$('#numbVar').empty();
-			$('#numbVar').append(numbVar);
+			//console.log(numbVar);
+			$('.numbVar').empty();
+			$('.numbVar').append(numbVar);
 			gm.removeColumn();
 			dm.partialPutLPP(lpp);
 	
@@ -76,7 +81,7 @@
 	$("#add_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
 		numbRes++;
-		console.log(numbRes);
+		//console.log(numbRes);
 		$('#numbRes').empty();
 		$('#numbRes').append(numbRes);
 		gm.addLine();
@@ -89,7 +94,7 @@
 		if(numbRes != 0)
 		{
 			numbRes--;
-			console.log(numbRes);
+			//console.log(numbRes);
 			$('#numbRes').empty();
 			$('#numbRes').append(numbRes);
 			gm.removeLine();
@@ -189,5 +194,9 @@
 	$(".toggler").click(function(){
 		var target = $(this).attr("data-target");
 		$(target).fadeToggle();
+		$(this).find('i').toggleClass('glyphicon-chevron-down glyphicon-chevron-right');
+		if (mostrarConteudo == true) {
+			mostrarConteudo = false;
+		}
 	});
 })();
