@@ -69,9 +69,11 @@
 		var lpp = dm.getLPP();
 		if(numbVar != 0){
 			numbVar--;
+
 			//console.log(numbVar);
 			$('.numbVar').empty();
 			$('.numbVar').append(numbVar);
+      
 			gm.removeColumn();
 			dm.partialPutLPP(lpp);
 	
@@ -94,7 +96,9 @@
 		if(numbRes != 0)
 		{
 			numbRes--;
+      
 			//console.log(numbRes);
+
 			$('#numbRes').empty();
 			$('#numbRes').append(numbRes);
 			gm.removeLine();
