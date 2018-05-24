@@ -57,10 +57,10 @@
 	$("#add_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
 		numbVar++;
-		//console.log(numbVar);
+		console.log("add coluna variavel"+numbVar);
 		$('.numbVar').empty();
 		$('.numbVar').append(numbVar);
-		gm.addColumn();
+		gm.addColumn();	
 		dm.partialPutLPP(lpp);
 
 		setTranslations();
@@ -83,7 +83,7 @@
 	$("#add_line_btn").on('click',function(e){
 		var lpp = dm.getLPP();
 		numbRes++;
-		//console.log(numbRes);
+		console.log(numbRes);
 		$('#numbRes').empty();
 		$('#numbRes').append(numbRes);
 		gm.addLine();

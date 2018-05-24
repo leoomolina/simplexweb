@@ -67,3 +67,7 @@ body{
 .cursor-pointer{
     cursor: pointer;
 }
+
+.btn-position{
+    float: right;
+}
