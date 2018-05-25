@@ -67,7 +67,7 @@
 	});
 	$("#remove_column_btn").on('click',function(e){
 		var lpp = dm.getLPP();
-		if(numbVar != 0){
+		if(numbVar != 1){
 			numbVar--;
 
 			//console.log(numbVar);

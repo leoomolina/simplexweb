@@ -14,7 +14,7 @@ var translations =
 	"clear_solutions": {en_us: "Clear Solutions", pt_br: "Limpar Soluções"},
 	"function": {en_us: "Function", pt_br: "Função"},
 	"type": { en_us: "Type", pt_br: "Tipo"},
-	"solutions": { en_us: "Solutions", pt_br: "Soluções"},
+	"solutions": { en_us: "Solutions", pt_br: "Solução"},
 	"next_solution": { en_us: "Next Solution", pt_br: "Próxima Solução"},
 	"step_by_step": { en_us: "Step by Step", pt_br: "Passo a Passo"},
 	"next_step": { en_us: "Next Step", pt_br: "Próximo Passo"},

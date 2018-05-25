@@ -52,14 +52,25 @@
 				<div class="row">
 					
 					<div class="row panel panel-default">
-						<div class="panel-heading toggler cursor-pointer" data-target="#function">
-							<h4 align="center" class="panel-title">
-								<translate trans="function">Function</translate>
-								<i class="glyphicon glyphicon-chevron-down"></i>
-							</h4>
-							<legend align="center"><translate trans="numberVariables">Number of Variables: </translate><span class="numbVar"></span></legend>
+						<div class="panel-heading toggler">
+							<h4 align="center" class="panel-title">Função</h4>
+							<legend align="center">Número de Variáveis:<span class="numbVar"></span></legend>
 						</div>
 						<div id="function" class="panel-body toggler-target">
+								<div class="row justify-content-md-center">
+										<fieldset>
+											<div class="col col-md-1 btn-position">
+												<p>
+													<button  id="add_column_btn" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span></button>
+												</p>
+											</div>
+											<div class="col col-md-1 btn-position">
+												<p>
+													<button id="remove_column_btn" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-minus"></span></button>
+												</p>
+											</div>
+										</fieldset>
+									</div>
 							<div class="col-md-2">
 								<table class="table">
 									<tr>
@@ -68,8 +79,8 @@
 									<tr>
 										<td>
 											<select id="kind_of_function" class="form-control">
-												<option  value="max" selected>Max</option>
-												 <option value="min">Min</option> 
+												<option value="min">Min</option> 
+												<option value="max">Max</option>
 											</select>
 										</td>
 									</tr>
@@ -84,30 +95,15 @@
 								</table>
 							</div>
 
-							<div class="row justify-content-md-center">
-								<fieldset>
-									<legend align="center"><translate trans="variables">Variables: </translate><span class="numbVar"></span></legend>
-									<div class="col col-md-1 btn-position">
-										<p>
-											<button  id="add_column_btn" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span></button>
-										</p>
-									</div>
-									<div class="col col-md-1 btn-position">
-										<p>
-											<button id="remove_column_btn" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-minus"></span></button>
-										</p>
-									</div>
-								</fieldset>
-							</div>
+							
 
 						</div>
 
 					</div>
 					<div class="row panel panel-default">
-						<div class="panel-heading toggler cursor-pointer" data-target="#constraints_body">
+						<div class="panel-heading toggler">
 							<div align="center" class="panel-title">
 								Restrições: <span id="numbRes"></span>
-								<i class="glyphicon glyphicon-chevron-down"></i>
 							</div>
 						</div>
 						<div id="constraints_body" class="panel-body toggler-target">
@@ -166,21 +162,26 @@
 					<div class="row">
 						<div id="solution_head" class="">
 							<div class="page-header">
-								<h3><translate trans="solutions">Solution(s)</translate></h3>
+								<h3>Solução</h3>
 							</div>
 						</div>
 					</div>
 					<div>
 						<div id="great_base" class="row"></div>
 						<div id="type_solution_msg" class="row"></div>
-						<div id="solutions" class="row">
-						</div>
-						<!--<div class="row">
-							<div class="col-md-2">
-								<p><button id="next_solution" class="btn btn-info"><translate trans="next_solution">Next Solution</translate></button></p>
+						<div id="solutions" class="row"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row">
+						<div id="sensitivityAnalysis_head" class="">
+							<div class="page-header">
+								<h3>Análise de Sensibilidade</h3>
 							</div>
-							<div id="next_solution_msg" class="col-md-10"></div>
-						</div>-->
+						</div>
+					</div>
+					<div>
+						<div id="" class="row"></div>
 					</div>
 				</div>
 				<div class="row">
