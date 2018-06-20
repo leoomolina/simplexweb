@@ -113,13 +113,13 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 		var vOut = simplex.variableToOutBase(vIn);
 
 		var element = '<div class="panel panel-default">';
-		element += '<div id="'+name+'_block'+number+'" class="panel-heading" data-target="#'+name+number+'">';
-		element += '<h4 align="center" class="panel-title"><translate trans="'+name+'">'+name+'</translate> '+number+'</h4>';
+		element += '<div id="'+name+'_block'+number+'" class="panel-heading" data-target="#'+name+' '+number+'">';
+		element += '<h4 align="center" class="panel-title">'+name+' '+number+'</h4>';
 		element += '</div>';
-		element += '<div id="'+name+number+'" class="panel-body toggler-target">';
+		element += '<div id="'+name+' '+number+'" class="panel-body toggler-target">';
 		element += '<table class="table">';
 		element += '<thead><tr>';
-		element += '<th><translate trans="base">base</translate></th>';
+		element += '<th>Base</th>';
 	
 		for(var i=1; i<size[1]; i++){
 			if(vIn != null && vIn+1 == i ){
@@ -143,7 +143,7 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 				else
 					element += '<td>x'+(variables[i-1]+1)+'</td>';
 			}
-			else element += '<td><translate trans="costs">costs</translate></td>';
+			else element += '<td>Custos</td>';
 
 			for(var j=0; j<size[1]; j++){
 				var value = table.subset(math.index(i,j));
@@ -165,7 +165,7 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 
 		var $great_base = $('#great_base');
 
-		var element = createSimplexTableHTML(simplex, "great_base", "");
+		var element = createSimplexTableHTML(simplex, "Base Ótima", "");
 		$great_base.append(element);
 
 		$("#great_base_block").click(function(){
@@ -174,26 +174,26 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 		});
 	};
 
-	this.putSolution = function(simplex, number){
-		if(simplex == null) return;
+	// this.putSolution = function(simplex, number){
+	// 	if(simplex == null) return;
 
-		var $solutions = $('#solutions');
+	// 	var $solutions = $('#solutions');
 
-		var element = createSimplexTableHTML(simplex, "solution", number);
-		$solutions.append(element);
+	// 	var element = createSimplexTableHTML(simplex, "Solução", number);
+	// 	$solutions.append(element);
 
-		$("#solution_block"+number).click(function(){
-			var target = $(this).attr("data-target");
-			$(target).fadeToggle();
-		});
-	};
+	// 	$("#solution_block"+number).click(function(){
+	// 		var target = $(this).attr("data-target");
+	// 		$(target).fadeToggle();
+	// 	});
+	// };
 
 	this.putStep = function(simplex,number){
 		if(simplex == null) return;
 
 		var $steps = $('#steps');
 
-		var element = createSimplexTableHTML(simplex, "step", number);
+		var element = createSimplexTableHTML(simplex, "Passo", number);
 		$steps.append(element);
 
 		$("#step_block"+number).click(function(){

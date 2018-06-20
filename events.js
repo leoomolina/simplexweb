@@ -7,14 +7,12 @@
 
 	var numbVar = 2;
 	$('.numbVar').append(numbVar);
-	var numbRes = 4;
+	var numbRes = 2;
 	$('#numbRes').append(numbRes);
 	//optimal solution single.
 	firstLPP.setFunction("min",[-1,-1]);
-	firstLPP.createConstraint([3,2],'>',6);
-	firstLPP.createConstraint([4,1],'<',16);
-	firstLPP.createConstraint([-2,3],'<',6);
-	firstLPP.createConstraint([1,4],'>',4);
+	firstLPP.createConstraint([1,1],'<',1);
+	firstLPP.createConstraint([1,1],'<',1);
 
 	//infinite solutions.
 	/*firstLPP.setFunction("min",[5,4,1]);
@@ -116,7 +114,7 @@
 		}, 2000);
 
 		if(gm.getNumberOfLines() == 0 || gm.getNumberOfColumns() == 0){
-			gm.putAlertMessage("solve_msg","size_error","danger");
+			gm.putAlertMessage("solve_msg","O número de variáveis ou restrições tem que ser maior que zero.","danger");
 			setTranslations();
 			return;
 		}
@@ -127,17 +125,34 @@
 
 		var sp = new Simplex(lpp);
 		if(sp.calculateSimplex2Fases()){
-			gm.putAlertMessage("solve_msg","problem_solved","success");
-			gm.printTypeOfSolution("type_solution_msg", sp.getSolution().getTypeOfSolution());
+			gm.putAlertMessage("solve_msg","Problema resolvido.","success");
+			// gm.printTypeOfSolution("type_solution_msg", sp.getSolution().getTypeOfSolution());
 			simplex = sp;
-			dm.putSolution(sp.getSolution(),1);
+			// dm.putSolution(sp.getSolution(),1);
 			dm.putGreatBase(sp.getGreatBase());
 		}
 		else{
 			gm.removeAlertMessage("type_solution_msg");
-			gm.putAlertMessage("solve_msg","invalid_lpp","danger");
+			gm.putAlertMessage("solve_msg","Problema de Programação Linear inválido.","danger");
 		}
 		
+		var senseMatriz = [];
+
+		for(let i = 0; i< p_matriz_final.length-2; i++ ){
+			let auxArray  = new Array;
+			auxArray.push(restNames[i])
+			auxArray.push(restValues[i])
+			senseMatriz.push(auxArray)
+		}
+
+		for(let i = 0; i< senseMatriz.length; i++ ){
+			for(let j = 0; j < minMaxValues[0].length; j++){
+				senseMatriz[i].push(minMaxValues[i][j])
+			}
+		}
+
+		printTabelaMaxMin(senseMatriz);
+
 		setTranslations();
 
 
@@ -151,7 +166,7 @@
 	$("#next_solution").on('click',function(){
 		gm.removeAlertMessage("next_solution_msg");
 		if(simplex == null){
-			gm.putAlertMessage("next_solution_msg","first_press_button_solve_lpp","warning");
+			gm.putAlertMessage("next_solution_msg","Primeiro pressione o botão 'Resolução'.","warning");
 			setTranslations();
 			$('#solutions').empty();
 			return;
@@ -159,11 +174,11 @@
 
 		var result = simplex.nextSolution();
 		if(result == null){
-			gm.putAlertMessage("next_solution_msg","there_isnt_more_solutions","info");
+			gm.putAlertMessage("next_solution_msg","Não existem mais soluções.","info");
 			setTranslations();
 			return;
 		}
-		dm.putSolution(result, simplex.getStepSolution());
+		// dm.putSolution(result, simplex.getStepSolution());
 
 		setTranslations();
 	});
@@ -171,7 +186,7 @@
 	$("#next_step").on('click',function(){
 		gm.removeAlertMessage("next_step_msg");
 		if(simplex == null){
-			gm.putAlertMessage("next_step_msg","first_press_button_solve_lpp","warning");
+			gm.putAlertMessage("next_step_msg","Primeiro pressione o botão 'Resolução'.","warning");
 			$('#steps').empty();
 			firstFase = true;
 			setTranslations();
@@ -181,12 +196,12 @@
 		var result = simplex.nextStepFirstFase();
 		if(result == null){
 			if(firstFase){
-				gm.endOfFirstFaseMessage();				
+				// gm.endOfFirstFaseMessage();				
 				firstFase = false;
 			}
 			result = simplex.nextStepSecondFase();
 		}
-		if(result == null) gm.putAlertMessage("next_step_msg","end_of_steps","info");
+		if(result == null) gm.putAlertMessage("next_step_msg","Fim da solução.","info");
 
 		dm.putStep(result, simplex.getStep());
 		
