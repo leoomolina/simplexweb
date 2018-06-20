@@ -8,7 +8,7 @@ NOME: Tiago Valentim Romeu	RA: 537934
 
 **ACESSO ONLINE**
 
-[SimplexWeb](http://simplexweb.000webhostapp.com/)
+[SimplexWeb]: (http://simplexweb.000webhostapp.com/)
 
 **Projeto de Pesquisa Operacional**
 
@@ -31,34 +31,37 @@ As restrições só aceitam "<=" como operador.
 
 Simplex
 
-Datas		Eventos
-06/04/16	Início do Planejamento
-06/04/16	Análise de tecnologias.
-06/06/16	Analise do Design.
-07/06/16	
-08/06/16	
-14/06/16	
-20/06/16	Atualizando README
+Datas			Eventos
+06/04/16	|	Início do Planejamento
+06/04/16	|	Análise de tecnologias.
+06/06/16	|	Analise do Design.
+07/06/16	|	
+08/06/16	|	
+14/06/16	|	
+20/06/16	|	Atualizando README
 
-Compatibilidade
 
-Requisitos		Ferramentas
-Navegadores		Mozila Firefox, Chrome, Internet Explorer
-Sistema Operacional	Ubuntu, Windows, Mac
-##Tecnologias
+**Compatibilidade**
 
-Tecnologias		Ferramentas
-Front-End	 	HTML, CSS, Bootstrap, javascript
-Back-End		Javascript, jquery
-Framework 		jquery, bootstrap
-Editor de Texto		Visual Code
-Servidor Web		WebHost, GitHub
+Requisitos		|	Ferramentas
+Navegadores		|	Mozila Firefox, Chrome, Internet Explorer
+Sistema Operacional	|	Ubuntu, Windows, Mac
+
+
+**Tecnologias**		
+
+Tecnologias		|	Ferramentas
+Front-End	 	|	HTML, CSS, Bootstrap, javascript
+Back-End		|	Javascript, jquery
+Framework 		|	jquery, bootstrap
+Editor de Texto		|	Visual Code
+Servidor Web		|	WebHost, GitHub
 
 Atividades Realizadas no Período
 
 Simplex
-Código	Título		Tarefa														Situação	Observação
-1	Maximizar	Montar a Tabela Simplex, e possibilitar o usuário a maximizar modelos de simplex com sistemas lineares.		Concluído	Apenas restrições de “<=”
+Código	|	Título	|	Tarefa												Situação	Observação
+1	|	Maximizar	Montar a Tabela Simplex, e possibilitar o usuário a maximizar modelos de simplex com sistemas lineares.		Concluído	Apenas restrições de “<=”
 2	Minimizar	Montar a Tabela Simplex, e possibilitar o usuário a minimizar modelos de simplex com sistemas lineares.		Concluído	Apenas restrições de “<=”
 3	Adição de restrições	Possibilitar o usuário a adicionar inputs para maiores números de restrições.				Concluído	
 4	Remoção de restrições	Possibilitar o usuário a remover inputs para menores números de restrições.				Concluído	
