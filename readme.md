@@ -10,7 +10,7 @@ Repositório para a implementação do algoritmo SimplexWeb
 
 ## ACESSO ONLINE
 
-- [SimplexWeb]: (http://simplexweb.000webhostapp.com/)
+- SimplexWeb: http://simplexweb.000webhostapp.com/
 
 ## Projeto de Pesquisa Operacional
 
