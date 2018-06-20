@@ -18,7 +18,7 @@ Repositório para a implementação do algoritmo SimplexWeb
 
 - O Simplex permite encontrar valores ideais em situações nas quais diversos aspectos precisam ser respeitados. Diante de um problema, são estabelecidas inequações que representam restrições para as variáveis.
 
-**Simplex**
+**Utilidades do Simplex...**
 
 - Algoritmo Simplex para problemas de minimização;
 - Algoritmo Simplex para problemas de maximização;
@@ -27,10 +27,10 @@ Repositório para a implementação do algoritmo SimplexWeb
 - Não possui um número fixo de restrições;
 - Tabela de Análise de Sensibilidade.
 
-As restrições só aceitam "<=" como operador.
+**Obs.: **As restrições só aceitam "<=" como operador.
 
 
-##Datas de elaboração do projeto
+## Datas de elaboração do projeto
 
 Datas | Eventos
 ----- | -------
@@ -43,7 +43,7 @@ Datas | Eventos
 20/06/16 | Atualizando README
 
 
-##Compatibilidade
+## Compatibilidade
 
 Requisitos		| Ferramentas
 -------------------- | --------------
@@ -51,7 +51,7 @@ Navegadores		| Mozila Firefox, Chrome, Internet Explorer
 Sistema Operacional	| Ubuntu, Windows, Mac
 
 
-##Tecnologias	
+## Tecnologias	
 
 Tecnologias	| Ferramentas
 ----------------|------------------
@@ -61,7 +61,7 @@ Framework 	| JQuery, BootStrap
 Editor de Texto	| Visual Code
 Servidor Web	| WebHost, GitHub
 
-##Atividades Realizadas no Período:
+## Atividades Realizadas no Período:
 
 Código | Título			  |Tarefa														| Situação    | Observação
 -------|------------------------  |-------------------------------------------------------------------------------------------------------------|-------------|--------------------------
