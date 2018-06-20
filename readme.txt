@@ -1,16 +1,18 @@
-﻿SimplexWeb 
+﻿# SimplexWeb 
+
 Repositório para a implementação do algoritmo SimplexWeb
 
+## Nome dos Integrantes do Grupo
 NOME: Guilherme Falco		RA: 557277
 NOME: Hélio Harada		RA: 559687
 NOME: Leonardo Molina		RA: 559997
 NOME: Tiago Valentim Romeu	RA: 537934
 
-**ACESSO ONLINE**
+## ACESSO ONLINE
 
 [SimplexWeb]: (http://simplexweb.000webhostapp.com/)
 
-**Projeto de Pesquisa Operacional**
+## Projeto de Pesquisa Operacional
 
 5º Semestre de Bacharelado em Sistemas de Informação.
 
