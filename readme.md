@@ -27,7 +27,7 @@ Repositório para a implementação do algoritmo SimplexWeb
 - Não possui um número fixo de restrições;
 - Tabela de Análise de Sensibilidade.
 
-**Obs.: **As restrições só aceitam "<=" como operador.
+**Obs.:** As restrições só aceitam "<=" como operador.
 
 
 ## Datas de elaboração do projeto
