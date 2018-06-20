@@ -33,14 +33,15 @@ As restrições só aceitam "<=" como operador.
 
 Simplex
 
-Datas			Eventos
-06/04/16	|	Início do Planejamento
-06/04/16	|	Análise de tecnologias.
-06/06/16	|	Analise do Design.
-07/06/16	|	
-08/06/16	|	
-14/06/16	|	
-20/06/16	|	Atualizando README
+Datas | Eventos
+--------- | ------
+06/04/16	| Início do Planejamento
+06/04/16	| Análise de tecnologias.
+06/06/16	| Analise do Design.
+07/06/16	| Maximização	
+08/06/16	| Minimazação
+14/06/16	| 	
+20/06/16	| Atualizando README
 
 
 **Compatibilidade**
