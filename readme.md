@@ -34,13 +34,15 @@ Repositório para a implementação do algoritmo SimplexWeb
 
 Datas | Eventos
 ----- | -------
-06/04/16 | Início do Planejamento
-06/04/16 | Análise de tecnologias.
-06/06/16 | Analise do Design.
-07/06/16 | Maximização	
-08/06/16 | Minimazação
-14/06/16 | Teste	
-20/06/16 | Atualizando README
+10/05/18 | Início do Planejamento
+10/05/18 | Análise de tecnologias.
+17/05/18 | Análise do Design.
+17/05/18 | Soluções de Maximização	
+24/05/18 | Soluções de Minimazação	
+31/05/18 | Atualização de Layout
+14/06/18 | Tabela de Sensibilidade
+20/06/18 | Simplex Completo
+20/06/18 | Entrega da Documentação
 
 
 ## Compatibilidade
