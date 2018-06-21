@@ -3,13 +3,15 @@
 Repositório para a implementação do algoritmo SimplexWeb
 
 ## Nome dos Integrantes do Grupo
-**NOME:** Guilherme Falco		**RA:** 557277
+NOME | RA
+----- | -------
+Guilherme Falco | 557277
 
-**NOME:** Hélio Harada		**RA:** 559687
+Hélio Harada | 559687
 
-**NOME:** Leonardo Molina		**RA:** 559997
+Leonardo Molina	| 559997
 
-**NOME:** Tiago Valentim Romeu	**RA:** 537934
+Tiago Valentim Romeu | 537934
 
 
 ## ACESSO ONLINE
@@ -28,8 +30,7 @@ Repositório para a implementação do algoritmo SimplexWeb
 - Algoritmo Simplex para problemas de maximização;
 - Faz a demostração passo a passo de iterações na tabela;
 - Não possui limite fixo variáveis de decisão;
-- Não possui um número fixo de restrições;
-- Tabela de Análise de Sensibilidade.
+- Não possui um número fixo de restrições.
 
 **Obs.:** As restrições só aceitam "<=" como operador.
 
@@ -44,7 +45,6 @@ Datas | Eventos
 17/05/18 | Soluções de Maximização	
 24/05/18 | Soluções de Minimazação	
 31/05/18 | Atualização de Layout
-14/06/18 | Tabela de Sensibilidade
 20/06/18 | Simplex Completo
 20/06/18 | Entrega da Documentação
 
@@ -76,4 +76,4 @@ Código | Título			  |Tarefa														| Situação    | Observação
 3	| Adição de restrições	  | Possibilitar o usuário a adicionar inputs para maiores números de restrições.				| Concluído	|
 4	| Remoção de restrições	  | Possibilitar o usuário a remover inputs para menores números de restrições.					| Concluído	|
 5	| Demonstrar passo a passo|	Demonstrar ao usuário as alterações na tabela causada pelas iterações do método simplex.		| Concluído	|
-6	| Tabela de sensibilidade | Demonstrar ao usuário a tabela de sensibilidade.							| Concluído	|
+6	| Tabela de sensibilidade | Demonstrar ao usuário a tabela de sensibilidade.							| Inconcluído	|

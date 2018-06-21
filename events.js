@@ -136,22 +136,22 @@
 			gm.putAlertMessage("solve_msg","Problema de Programação Linear inválido.","danger");
 		}
 		
-		var senseMatriz = [];
+		// var senseMatriz = [];
 
-		for(let i = 0; i< p_matriz_final.length-2; i++ ){
-			let auxArray  = new Array;
-			auxArray.push(restNames[i])
-			auxArray.push(restValues[i])
-			senseMatriz.push(auxArray)
-		}
+		// for(let i = 0; i< p_matriz_final.length-2; i++ ){
+		// 	let auxArray  = new Array;
+		// 	auxArray.push(restNames[i])
+		// 	auxArray.push(restValues[i])
+		// 	senseMatriz.push(auxArray)
+		// }
 
-		for(let i = 0; i< senseMatriz.length; i++ ){
-			for(let j = 0; j < minMaxValues[0].length; j++){
-				senseMatriz[i].push(minMaxValues[i][j])
-			}
-		}
+		// for(let i = 0; i< senseMatriz.length; i++ ){
+		// 	for(let j = 0; j < minMaxValues[0].length; j++){
+		// 		senseMatriz[i].push(minMaxValues[i][j])
+		// 	}
+		// }
 
-		printTabelaMaxMin(senseMatriz);
+		// printTabelaMaxMin(senseMatriz);
 
 		setTranslations();
 
