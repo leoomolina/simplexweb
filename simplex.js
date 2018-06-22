@@ -37,7 +37,7 @@ function LPP(){
 		that.c = c;
 		if(type == "max" && that.c.length > 0){
 			var first = math.matrix(that.c);
-			first = math.multiply(-1,first);
+			first = math.multiply(1,first);
 			that.c = first.valueOf();
 		}
 	};

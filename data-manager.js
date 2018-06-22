@@ -15,10 +15,10 @@ function DataManager(gm){  //recebe como parâmetro uma instância da classe Gra
 		/*
 		### CASO FOR NULO ELE SETA MAX ### 
 		*/
-		if (kindOf == null || kindOf == "")
+	/*	if (kindOf == null || kindOf == "")
 		{
 			var kindOf = "max";
-		}
+		}*/
 		console.log(kindOf);
 		return kindOf;
 	};

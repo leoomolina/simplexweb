@@ -4,7 +4,7 @@ Repositório para a implementação do algoritmo SimplexWeb
 
 ## Nome dos Integrantes do Grupo
 NOME | RA
------ | -------
+---------------- | -------
 Guilherme Falco | 557277
 
 Hélio Harada | 559687
