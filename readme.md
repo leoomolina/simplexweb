@@ -6,11 +6,8 @@ Repositório para a implementação do algoritmo SimplexWeb
 NOME | RA
 ---------------- | -------
 Guilherme Falco | 557277
-
 Hélio Harada | 559687
-
 Leonardo Molina	| 559997
-
 Tiago Valentim Romeu | 537934
 
 
